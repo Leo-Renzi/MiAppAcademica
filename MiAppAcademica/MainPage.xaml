@@ -1,0 +1,65 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiAppAcademica.MainPage"
+             BackgroundColor="Black"
+             Title="Login">
+
+    <ScrollView>
+        <Grid RowDefinitions="Auto,*" Padding="20">
+            <Label Grid.Row="0"  
+                   TextColor="#CCCCCC" 
+                   FontSize="20" 
+                   HorizontalOptions="Start"
+                   Margin="0,10,0,20"/>
+
+            <StackLayout Grid.Row="1" 
+                         Spacing="20" 
+                         VerticalOptions="Center" 
+                         HorizontalOptions="Center" 
+                         WidthRequest="300">
+
+                <Image x:Name="LogoImage" 
+                       Source="ites_blanco.png"
+                       HeightRequest="200"
+                       WidthRequest="300"
+                       Aspect="AspectFit"
+                       HorizontalOptions="Center"/>
+
+                <Label Text="Usuario:" 
+                       TextColor="White" 
+                       Margin="0,20,0,0"/>
+
+                <Frame Padding="5" 
+                       BackgroundColor="#CCCCCC" 
+                       CornerRadius="5" 
+                       HasShadow="False">
+                    <Entry x:Name="UsernameEntry" 
+                           BackgroundColor="#CCCCCC" 
+                           TextColor="Black" 
+                           Placeholder="Ingrese su usuario"/>
+                </Frame>
+
+                <Label Text="Contraseña:" 
+                       TextColor="White"/>
+
+                <Frame Padding="5" 
+                       BackgroundColor="#CCCCCC" 
+                       CornerRadius="5" 
+                       HasShadow="False">
+                    <Entry x:Name="PasswordEntry" 
+                           BackgroundColor="#CCCCCC" 
+                           TextColor="Black" 
+                           IsPassword="True" 
+                           Placeholder="Ingrese su contraseña"/>
+                </Frame>
+
+                <Button Text="INGRESAR" 
+                        BackgroundColor="#FF9800" 
+                        TextColor="White" 
+                        CornerRadius="5"
+                        HeightRequest="50"
+                        Clicked="OnLoginClicked"/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiAppAcademica.MenuPrincipalPage"
+             BackgroundColor="Black"
+             Title="Menú Principal">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+
+        <!-- Barra superior de título -->
+        <Frame Grid.Row="0" 
+               BackgroundColor="#FF9800" 
+               Padding="15" 
+               CornerRadius="0"
+               Margin="0">
+            <Label Text="Menú Principal" 
+                   TextColor="White" 
+                   FontSize="18" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+        </Frame>
+
+        <!-- Contenido principal -->
+        <StackLayout Grid.Row="1" 
+                     Spacing="20" 
+                     Margin="20" 
+                     VerticalOptions="Center">
+
+            <!-- Botón: Acerca del Desarrollador -->
+            <Frame BackgroundColor="#FF9800"
+                   CornerRadius="10"
+                   HasShadow="True"
+                   Padding="0">
+                <Grid ColumnDefinitions="Auto,*"
+                      HeightRequest="60"
+                      VerticalOptions="Center">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnAcercaDesarrolladorClicked" />
+                    </Grid.GestureRecognizers>
+
+                    <Image Source="person.png"
+                           WidthRequest="30"
+                           HeightRequest="30"
+                           Margin="15,0"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"/>
+
+                    <Label Grid.Column="1"
+                           Text="Acerca del Desarrollador"
+                           TextColor="White"
+                           FontSize="16"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Margin="10,0"/>
+                </Grid>
+            </Frame>
+
+            <!-- Botón: Información del Servicio -->
+            <Frame BackgroundColor="#FF9800"
+                   CornerRadius="10"
+                   HasShadow="True"
+                   Padding="0">
+                <Grid ColumnDefinitions="Auto,*"
+                      HeightRequest="60"
+                      VerticalOptions="Center">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnInformacionServicioClicked" />
+                    </Grid.GestureRecognizers>
+
+                    <Image Source="quick_reference_all.png"
+                           WidthRequest="30"
+                           HeightRequest="30"
+                           Margin="15,0"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"/>
+
+                    <Label Grid.Column="1"
+                           Text="Información del Servicio"
+                           TextColor="White"
+                           FontSize="16"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Margin="10,0"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+
+        <!-- Botón de cerrar sesión tradicional con imagen a la izquierda -->
+        <Button Grid.Row="2" 
+                Text="Cerrar Sesión" 
+                BackgroundColor="#FF9800" 
+                TextColor="White" 
+                Margin="20" 
+                HeightRequest="50"
+                ImageSource="home.png"
+                Clicked="OnCerrarSesionClicked" 
+                ContentLayout="Left,15"
+                HorizontalOptions="Fill"
+                FontSize="16"/>
+    </Grid>
+</ContentPage>

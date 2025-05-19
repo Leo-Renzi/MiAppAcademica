@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiAppAcademica.InformacionServicioPage"
+             BackgroundColor="Black"
+             Title="Información del Servicio">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+        <!-- Barra superior de título -->
+        <Frame Grid.Row="0" 
+               BackgroundColor="#FF9800" 
+               Padding="15" 
+               CornerRadius="0"
+               Margin="0">
+
+            <Label Text="Informacion del Servicio" 
+                   TextColor="White" 
+                   FontSize="18" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+        </Frame>
+
+        <!-- Contenido principal -->
+        <Frame Grid.Row="1" 
+               BackgroundColor="#CCCCCC" 
+               Margin="20" 
+               Padding="20">
+
+            <Label TextColor="Black" 
+                   LineBreakMode="WordWrap">
+                <Label.Text>
+                    Esta app fue creada por mí, Leonardo, como parte de un proyecto académico.
+                    Aunque no representa un servicio real, busca mostrar cómo podría estructurarse una app móvil moderna.
+                    El diseño, navegación y estética están orientados a practicar lo aprendido y prepararme para el desarrollo de apps reales en el futuro.
+                </Label.Text>
+            </Label>
+        </Frame>
+
+        <!-- Botón de volver -->
+        <Button Grid.Row="2" 
+                Text="Volver" 
+                BackgroundColor="#FF9800" 
+                TextColor="White" 
+                CornerRadius="5"
+                Margin="20" 
+                HeightRequest="50"
+                Clicked="OnVolverClicked"/>
+    </Grid>
+</ContentPage>
