@@ -1,0 +1,77 @@
+# 📱 MiAppAcademica
+
+Esta app fue creada por **Leonardo Renzi** como parte de un **proyecto académico** para demostrar conocimientos en diseño y desarrollo de aplicaciones móviles utilizando .NET MAUI.
+
+---
+
+## 🧾 Descripción
+
+MiAppAcademica es una aplicación de ejemplo que simula una plataforma educativa. Aunque no representa un servicio real, busca mostrar cómo podría estructurarse una app móvil moderna.  
+El diseño, navegación y estética fueron orientados a **practicar lo aprendido** y prepararme para el desarrollo de aplicaciones reales.
+
+---
+
+## 🔐 Login
+
+- Usuario: `admin`  
+- Contraseña: `1234`  
+
+*Se implementó una validación básica hardcodeada para evitar accesos vacíos al sistema.*
+
+---
+
+## ✅ Funcionalidades
+
+- Pantalla de login con validación
+- Navegación hacia el menú principal
+- Interfaz basada en Figma
+- Compatible con distintos tamaños de pantalla
+
+---
+
+## 📸 Capturas
+
+Las siguientes capturas fueron tomadas con la app ejecutándose:
+
+- En el **emulador Pixel 7 - API 34 (Android 14)** desde Visual Studio
+- En un **celular físico Samsung S7 Edge**
+
+(Ver documento PDF incluido en el repositorio)
+
+---
+
+## 🧠 Diseño UX/UI
+
+El diseño de la app fue prototipado en **Figma**, incluyendo:
+
+- Diseño visual de las pantallas
+- Diagrama de navegación entre componentes
+
+(Ver archivo PDF exportado desde Figma)
+
+---
+
+## 🛠️ Tecnologías
+
+- .NET MAUI
+- Visual Studio 2022
+- Figma
+
+---
+
+## 📁 Estructura del repositorio
+
+MiAppAcademica/
+├── Capturas/ # Capturas de pantalla de la app corriendo
+├── Diseño/ # Archivos PDF y/o imagen exportados desde Figma
+├── MiAppAcademica/ # Código fuente del proyecto
+├── README.md # Este archivo
+
+---
+
+## 🧑‍💻 Autor
+
+**Leonardo Renzi**  
+Estudiante en formación con interés en el desarrollo de apps móviles multiplataforma.
+
+
